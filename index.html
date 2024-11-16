@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Enterprises</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+      </style>
+
+</head>
+<body>
+<!-- Contact Bar -->
+<div class="contact-bar">
+    <span><i class="fas fa-phone-alt"></i> +91-9506371786</span>
+    <span class="separator">|</span>
+    <span><i class="fas fa-envelope"></i>jabirhusain.smile@gmail.com</span>
+    <span class="separator">|</span>
+    <a href="https://www.facebook.com/jabirhusain.smile?mibextid=ZbWKwL" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <span class="separator">|</span>
+    <a href="https://www.linkedin.com/in/zabirhussain" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
+  <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="LOGO2.png" alt="Bharat Enterprises Logo" />Bharat Enterprises</a>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+    </nav>
+   <!-- Carousel Section -->
+<div class="carousel">
+    <div class="carousel-slide">
+        <img src="1.jpeg" alt="Slide 1">
+    </div>
+    <div class="carousel-slide">
+        <img src="2.jpeg" alt="Slide 2">
+    </div>
+    <div class="carousel-slide">
+        <img src="4.jpeg" alt="Slide 3">
+    </div>
+    <div class="carousel-slide">
+        <img src="5.jpeg" alt="Slide 3">
+    </div>
+    <div class="carousel-slide">
+        <img src="7.jpeg" alt="Slide 3">
+    </div>
+    <div class="carousel-slide">
+        <img src="9.jpeg" alt="Slide 3">
+    </div>
+    <!-- Add more slides as needed -->
+     <!-- Welcome Message Overlay -->
+    <div class="welcome-overlay">
+        <h2>Welcome to</h2><br>
+        <h1><span>Bharat Enterprises</span> </h1>
+        <p>Manufacturers & Traders of Plastic Granules (Plastic Dana)</p>
+    </div>
+
+    <!-- Navigation Dots -->
+    <div class="carousel-dots">
+        <span class="dot" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+        <span class="dot" data-slide="4"></span>
+        <span class="dot" data-slide="5"></span>
+        <!-- Add more dots as needed -->
+    </div>
+</div>
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Bharat Enterprises</h2>
+            <p>
+                Bharat Enterprises specializes in the manufacturing and distribution of high-quality plastic granules.
+                We are committed to sustainable practices and innovation in our field. With years of expertise, we
+                provide a range of plastic materials that meet industry standards and cater to diverse client needs.
+            </p>
+            <div class="about-icons">
+                <div class="icon-box">
+                    <i class="fas fa-recycle"></i>
+                    <h4>Sustainable Practices</h4>
+                    <p>We prioritize eco-friendly processes to minimize environmental impact.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-industry"></i>
+                    <h4>Innovative Solutions</h4>
+                    <p>Our team is constantly innovating to meet the demands of modern industries.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Quality Assurance</h4>
+                    <p>Ensuring the highest standards in every batch of products we deliver.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="BANNER.png" alt="About Bharat Enterprises">
+        </div>
+    </section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <p class="services-intro">
+        Bharat Enterprises offers a range of high-quality services to meet diverse industrial needs, ensuring excellence and reliability.
+    </p>
+    <div class="services-container">
+        <div class="service-card">
+            <i class="fas fa-cogs"></i>
+            <h4>Custom Manufacturing</h4>
+            <p>We provide customized plastic granule manufacturing services tailored to meet your exact specifications.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-truck-loading"></i>
+            <h4>Bulk Supply</h4>
+            <p>Reliable bulk supply options ensure timely and efficient delivery to our clients.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-researchgate"></i>
+            <h4>Product Research</h4>
+            <p>Our team conducts in-depth research to stay ahead of industry trends and innovate for quality improvement.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Product Showcase Section -->
+<section id="products" class="product-showcase">
+    <h2>Our Products</h2>
+    <div class="filter-buttons">
+        <button onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('granules')">Granules</button>
+        <button onclick="filterProducts('powders')">Powders</button>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card" data-category="granules">
+            <img src="1.jpeg" alt="Granule Product" class="product-image">
+            <p>Granule Product 1</p>
+        </div>
+        <div class="product-card" data-category="granules">
+            <img src="2.jpeg" alt="Granule Product" class="product-image">
+            <p>Granule Product 2</p>
+        </div>
+        <div class="product-card" data-category="granules">
+            <img src="5.jpeg" alt="Granule Product" class="product-image">
+            <p>Granule Product 3</p>
+        </div>
+        <div class="product-card" data-category="granules">
+            <img src="7.jpeg" alt="Granule Product" class="product-image">
+            <p>Granule Product 4</p>
+        </div>
+        <div class="product-card" data-category="granules">
+            <img src="8.jpeg" alt="Granule Product" class="product-image">
+            <p>Granule Product 5</p>
+        </div>
+        <div class="product-card" data-category="granules">
+            <img src="9.jpeg" alt="Granule Product" class="product-image">
+            <p>Granule Product 6</p>
+        </div>
+       
+        <!-- Add more products as needed -->
+    </div>
+</section>
+<!-- Location Section -->
+<section id="contact" class="location-section">
+    <h2>Our Location</h2>
+    <p class="location-intro">Find us at Bharat Enterprises. Visit us or contact us for any inquiries.</p>
+    <div class="location-content">
+        <div class="location-info">
+            <h4>Address of Pricipal place of Business:</h4>
+            <h5>Building No./Flat No.: KHASRA NO. 308</h5>
+            <h5>Name of Premises/Building :</h5>
+            <p>MALVIYA NAGAR AISHBAGH</p>
+            <h5>Road/Street:</h5>
+            <p>Murtaza Hussain Road</p>
+            <h5>Locality/Sub Locality:</h5>
+            <p>Sheetal Khera</p>
+            <h5>City/Town/Village:</h5>
+            <p>Lucknow</p>
+            <h5>District:</h5>
+            <p>Lucknow</p>
+            <h5>State:</h5>
+            <p>Uttar Pradesh</p>
+            <h5>PIN Code:</h5>
+            <P>226003</P>
+     <h4>Contact:</h4>
+            <p>Phone: 9506371786<br>Email: info@bharatenterprises.com</p>
+        </div>
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.4337793756345!2d80.94407637421516!3d26.762439366534593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfb0ba4981825%3A0x8824500a6e2a399d!2sShital%20Khera%2C%20Eldeco%20Udyan%20Ii%2C%20Lucknow%2C%20Uttar%20Pradesh%20226014!5e0!3m2!1sen!2sin!4v1731583646929!5m2!1sen!2sin"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <!-- Company Information -->
+        <div class="footer-about">
+            <h3>About Us</h3>
+            <p>Bharat Enterprises is a leading manufacturer of plastic granules with a focus on quality and customer satisfaction.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Address: [Company Address Here]</p>
+            <p>Phone: <a href="9506371786">9506371786</a></p>
+            <p>Email: <a href="jabirhusain.smaile@gmail.com">jabirhusain.smile@gmail.com</a></p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/jabirhusain.smile?mibextid=ZbWKwL" target="_blank">Facebook</a> |
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/" target="_blank">GitHub</a> |
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+        </div>
+    </div>
+    <p class="footer-credit">© 2024 BHARAT ENTERPRISES PLASTIC GRANULES MANUFACTURES. All rights reserved.</p>
+    <p class="footer-credit">Developed by: <a href="https://qarizakirnadwi.github.io/My-Portfolio/" target="_blank">Qari Zakir Hussain Nadwi</a></p>
+</footer>
+
+
+<script>
+        // Selecting elements
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const navLinkItems = document.querySelectorAll('.nav-links li');
+
+        // Toggle the menu on hamburger click
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+        });
+
+        // Close the menu when a navigation link is clicked
+        navLinkItems.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('nav-active');
+            });
+        });
+        // Select all slides and dots
+const slides = document.querySelectorAll('.carousel-slide');
+const dots = document.querySelectorAll('.dot');
+let currentSlide = 0;
+
+// Function to show a specific slide
+function showSlide(index) {
+    // Hide all slides and remove active class from all dots
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        dots[i].classList.remove('active');
+    });
+    // Show the current slide and activate the corresponding dot
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    currentSlide = index;
+}
+
+// Auto-slide every 5 seconds
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length; // Loop back to the first slide
+    showSlide(currentSlide);
+}
+
+// Set interval for auto-sliding
+const slideInterval = setInterval(nextSlide, 5000); // 5 seconds
+
+// Dot navigation
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        clearInterval(slideInterval); // Stop auto-slide temporarily
+        showSlide(index); // Show selected slide
+    });
+});
+
+// Initialize the first slide as active
+showSlide(currentSlide);
+
+function filterProducts(category) {
+    const products = document.querySelectorAll('.product-card');
+    products.forEach(product => {
+        if (category === 'all' || product.getAttribute('data-category') === category) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+
+    </script>
+</body>
+</html>
